@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="parent">
+        <section class="nav-box">
+            <nav>
+                <div class="logo-container">
+                    <h1>Port-folio</h1>
+                </div>
+                <div class="mid-nav">
+                    <!-- <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Contact</li>
+                    </ul> -->
+                </div>
+                <div class="toggle"></div>
+            </nav>
+        </section>
+        <section class="home">
+            <div class="home-item1">
+                <div class="img-box">
+                    <img src="homelogo.png" alt="">
+                </div>
+            </div>
+            <div class="home-item2">
+                <h1>
+                    Hi there, THIS is Pranay !
+                </h1>
+                <p>
+                    Hi, there i am Pranay dutta or you can call me Rick. I am a passionate web developer and software
+                    engineer.Contact me for questions and queries from below ...
+                </p>
+                <div class="social">
+                    <a href="https://facebook.com">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="https://github.com">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                    <a href="https://instagram.com">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const menu = document.querySelector('.menu')
+        const parentslide = document.querySelector('.parent')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            parentslide.classList.toggle('active')
+            menu.classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>
