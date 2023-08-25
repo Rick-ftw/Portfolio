@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+    --primary-color: #071952;
+    --secondary-color: #0B666A;
+    --text-color: #97FEED;
+
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-color)
+}
+
+.nav-box {
+    height: 100px;
+}
+
+nav {
+    max-width: 1800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 4vw 20px 8vw;
+    margin: auto;
+}
+
+.logo-container {
+    font-weight: 500;
+    font-size: 2vw;
+    max-width: 30vw;
+    padding: 10px 1.5vw;
+    border-radius: 15px;
+    color: var(--text-color);
+}
+
+.logo-container h1 {
+    animation: shadow 10s infinite;
+    text-shadow: 2px 2px 0px rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+@keyframes shadow {
+    100% {
+        text-shadow: 2px 2px 0px rgb(255, 255, 255);
+    }
+
+    75% {
+        text-shadow: 2px 2px 0px rgb(231, 231, 68);
+
+    }
+
+    50% {
+        text-shadow: 2px 2px 0px rgb(236, 62, 31);
+
+    }
+
+    25% {
+        text-shadow: 2px 2px 0px rgb(57, 241, 103);
+
+    }
+
+    0% {
+        text-shadow: 2px 2px 0px rgb(191, 35, 230);
+    }
+}
+
+.toggle {
+    width: 60px;
+    height: 60px;
+    background: url(../menu.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+
+}
+
+.toggle.active {
+    background: url(../close.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+}
+.container{
+    width: 90vw;
+    margin: auto;
+}
+#work{
+    padding-top: 5vw;
+    display: flex;
+    justify-content: center;
+}
+#heading{
+    width: fit-content;
+}
+#work h1 {
+    text-transform: uppercase;
+    color: transparent;
+    font-size: 4.5vw;
+    -webkit-text-stroke: .6px var(--text-color);
+}
+#work>#heading>h5{
+    text-align: right;
+    text-transform: uppercase;
+    margin-right: 16px;
+    color: var(--text-color);
+    font-weight: 100;
+    font-size: .8vw;
+}
+#work-samples{
+    gap: 20px;
+    padding: 2vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
