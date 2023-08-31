@@ -8,6 +8,9 @@ This project is a responsive website designed to provide a seamless and optimize
 ## Project Overview:
 The ResponsiveWebsite project aims to create a user-friendly website that dynamically adjusts its layout, content, and design based on the user's device. The website provides an optimal viewing experience, ensuring that visitors can easily navigate and interact with the content without encountering usability issues.
 
+## Site is live
+You can access the website using the following link: [Website Link]((https://rick-ftw.github.io/Portfolio-site/))
+
 ## Technologies Used:
 - HTML5
 - CSS3 (including Flexbox and Grid)
