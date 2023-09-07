@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="work.css">
     <title>Works</title>
 </head>
 <body>
-    <div id="parent">
+    <div class="parent">
         <section class="nav-box">
             <nav>
                 <div class="logo-container">
-                    <h1>Works</h1>
+                    <a href="../index.html"><h1>Port-folio</h1></a>
                 </div>
                 <div class="toggle"></div>
             </nav>
@@ -52,5 +52,27 @@
             </div>
         </section>
     </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const menu = document.querySelector('.menu')
+        const parentslide = document.querySelector('.parent')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            parentslide.classList.toggle('active')
+            menu.classList.toggle('active')
+        })
+    </script>
 </body>
 </html>

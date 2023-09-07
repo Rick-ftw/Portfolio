@@ -42,6 +42,11 @@ nav {
     color: var(--text-color);
 }
 
+.logo-container a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 .logo-container h1 {
     animation: shadow 10s infinite;
     text-shadow: 2px 2px 0px rgb(255, 255, 255);
@@ -91,25 +96,30 @@ nav {
     background-position: center;
     cursor: pointer;
 }
-.container{
+
+.container {
     width: 90vw;
     margin: auto;
 }
-#work{
+
+#work {
     padding-top: 5vw;
     display: flex;
     justify-content: center;
 }
-#heading{
+
+#heading {
     width: fit-content;
 }
+
 #work h1 {
     text-transform: uppercase;
     color: transparent;
     font-size: 4.5vw;
     -webkit-text-stroke: .6px var(--text-color);
 }
-#work>#heading>h5{
+
+#work>#heading>h5 {
     text-align: right;
     text-transform: uppercase;
     margin-right: 16px;
@@ -117,10 +127,61 @@ nav {
     font-weight: 100;
     font-size: .8vw;
 }
-#work-samples{
+
+#work-samples {
     gap: 20px;
     padding: 2vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+}
+
+.menu {
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-color);
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.menu.active {
+    z-index: 2;
+    visibility: visible;
+    right: 0;
+    transition: 0.3s;
+}
+.parent{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    transition: 1s;
+}
+.parent.active {
+    position: relative;
+    transform: translateX(-18vw);
+    transition: 0.4s;
+}
+.menu>ul{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    color: var(--text-color)
+}
+.menu ul li a:hover{
+    color: #fff;
+}
+.menu ul {
+    position: relative;
+    list-style: none;
 }
