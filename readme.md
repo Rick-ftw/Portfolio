@@ -17,7 +17,7 @@ You can access the website using the following link: `https://rick-ftw.github.io
 - JavaScript 
 
 ## Installation:
-1. Clone the repository: `git clone https://github.com/rick/Portfolio-site.git`
+1. Clone the repository: `git clone https://github.com/rick/Portfolio.git`
 2. Navigate to the project directory: `cd Portfolio`
 
 ## Usage:
