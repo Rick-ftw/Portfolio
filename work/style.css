@@ -185,3 +185,67 @@ nav {
     position: relative;
     list-style: none;
 }
+
+
+@media (max-width: 1364px) {
+    .menu{
+        width: 200px;
+    }
+    #work>#heading>h5 {
+        font-size: 1vw;
+    }
+}
+@media (max-width: 900px) {
+    .menu{
+        background-color: var(--secondary-color);
+        top: 100px;
+        height: 50vh;
+        border-radius: 10px;
+        width: 200px;
+    }
+    .menu>ul>li>a{
+        font-size: 20px;
+    }
+    #work>#heading>h5 {
+        font-size: 1.5vw;
+    }
+}
+@media (max-width: 420px) {
+    .home{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        justify-content: flex-start;
+        padding-top: 100px;
+    }
+    #work>#heading>h5 {
+        font-size: 2vw;
+        margin: 0;
+    }
+    .logo-container>a>h1{
+        font-size: 20px;
+    }
+    .menu>ul>li>a{
+        font-size: 15px;
+    }
+    .menu{
+        height: 30vh;
+        width: 120px;
+        transition: .2s ease-in;
+        right: 5px;
+    }
+    .menu.active{
+        transition: .2s ease-in;
+        right: 5px;
+    }
+    .parent.active{
+        transform: translateX(0);
+    }
+    .toggle{
+        background-size: 20px;
+    }
+    .toggle.active{
+        background-size: 20px;
+    }
+
+}
